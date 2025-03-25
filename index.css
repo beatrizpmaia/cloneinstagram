@@ -5,11 +5,17 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container { 
     width: 935px;
     display: grid;
     grid-template-columns: 1fr 350px;
     column-gap: 20px;
+    margin: 50px auto 30px;
+    
 }
 
 .pitch {
@@ -18,8 +24,10 @@ body {
 }
 
 .form {
-    form {
-        text-align: center;
+    text-align: center;
+
+    form {    
+        margin-bottom: 10px;    
         border: 1px solid #ffff;
         background-color: #ffff;
         padding: 20px 40px;
@@ -53,6 +61,98 @@ body {
 
         }
 
+        .separetor {
+            color: rgb(115, 115, 115);
+            text-transform: uppercase;
+            font-weight: 600px;
+            font-size: .8125rem;
+            margin: 16px 0 26px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+
+            &::before,
+            &::after {
+                content:'';
+                width: 106px;
+                height: 1px;
+                display: block;
+                background-color: #dbdbdb;
+            }
+        }
+
+        .entrar-com-facebook {
+            color:rgb(0, 149, 246); 
+            font-size: 14px;
+            font-family: var(--font-family-system);
+            font-weight: normal;   
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 18px;
+            gap: 6px;                         
+        }
+
+        .esqueceu-senha {
+            color: rgb(0, 55, 107);
+            font-size: 14px;                       
+        }
+
+        
+
     }
+
+.sinup{
+    border: 1px solid #ffff;
+    background-color: #ffff;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+    a {
+        font-weight: normal; 
+        color: rgb(0, 149, 246); 
+        
+    }
+
+    }
+
+.get-app {
+    p{
+        font-size: 14px;
+    }
+    
+}
+
+
+}
+
+.footer {
+    width: 935px;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 50px auto 80px; 
+
+    .links {
+        margin-bottom: 10px;
+
+        a {
+            color: rgb(0, 55, 107); 
+            margin: 0 5px;
+            margin-bottom: 10px;
+            
+        }
+
+    
+    
+    }
+    
+
+    
+    
+
+
+
 }
 
